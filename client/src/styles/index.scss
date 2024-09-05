@@ -1,0 +1,21 @@
+@import "./mods/zero-styles.scss";
+:where(.css-dev-only-do-not-override-14i19y2).ant-menu
+  .ant-menu-item
+  .ant-menu-item-icon,
+:where(.css-dev-only-do-not-override-14i19y2).ant-menu
+  .ant-menu-submenu-title
+  .ant-menu-item-icon,
+:where(.css-dev-only-do-not-override-14i19y2).ant-menu .ant-menu-item .anticon,
+:where(.css-dev-only-do-not-override-14i19y2).ant-menu
+  .ant-menu-submenu-title
+  .anticon {
+  min-width: 14px;
+  transition: font-size 0.2s cubic-bezier(0.215, 0.61, 0.355, 1),
+    margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1370px;
+  min-height: 100vh;
+}
