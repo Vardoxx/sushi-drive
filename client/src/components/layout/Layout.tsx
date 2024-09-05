@@ -18,7 +18,7 @@ export const MyLayout: React.FC = () => {
         collapsed={collapsed}
         onCollapse={(value) => setCollapsed(value)}
       >
-        <div className="demo-logo-vertical" />
+        <div />
         <Menu
           theme="dark"
           defaultSelectedKeys={["1"]}
