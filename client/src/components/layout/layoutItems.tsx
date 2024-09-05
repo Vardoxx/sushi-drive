@@ -10,7 +10,7 @@ import { FaCirclePlus } from "react-icons/fa6";
 export const layoutItems: GetItemsProps[] = [
   {
     label: "Сезонное меню",
-    key: "/season",
+    key: "/",
     icon: <IoMdClock style={{ fontSize: "20px" }} />,
   },
   {
