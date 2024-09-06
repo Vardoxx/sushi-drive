@@ -1,14 +1,18 @@
 import { Button, Card, Col, Image, Row } from "antd";
-import Meta from "antd/es/card/Meta";
 import { ProductCardProps } from "../../types/product-card";
+import { useNotification } from "../../hooks/useNotification";
+import Meta from "antd/es/card/Meta";
 
 const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
+  const { openNotification, contextHolder } = useNotification();
+
   return (
     <Row justify={"center"} gutter={[24, 24]}>
-      {items.map((item) => (
-        <Col>
+      {contextHolder}
+      {items.map((i) => (
+        <Col key={i.id}>
           <Card
-            key={item.id}
+            key={i.id}
             hoverable
             style={{
               position: "relative",
@@ -21,13 +25,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
               <Image
                 height={150}
                 style={{ borderRadius: "1rem" }}
-                alt={item.title}
-                src={item.img}
+                alt={i.title}
+                src={i.img}
               />
             }
           >
             <div>
-              <Meta title={item.title} />
+              <Meta title={i.title} />
             </div>
             <div
               style={{
@@ -36,7 +40,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
                 marginTop: "10px",
               }}
             >
-              <Meta description={item.composition} />
+              <Meta description={i.composition} />
             </div>
 
             <div
@@ -47,8 +51,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
                 height: "32px",
               }}
             >
-              <Button type="primary" shape="round" size={"middle"}>
-                {`${item.cost} ₽`}
+              <Button
+                onClick={() => openNotification("success", i.title)}
+                type="primary"
+                shape="round"
+                size={"middle"}
+              >
+                {`${i.cost} ₽`}
               </Button>
             </div>
           </Card>
