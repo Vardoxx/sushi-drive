@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MyLayout as Layout } from "../components/layout/Layout";
-import SeasonPage from "../pages/Season-page/SeasonPage";
+import SeasonPage from "../pages/SeasonPage";
 
 export const router = createBrowserRouter([
   {

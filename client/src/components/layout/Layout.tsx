@@ -3,6 +3,7 @@ import { Layout, Menu } from "antd";
 import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import { layoutItems } from "./layoutItems";
 import { Footer } from "antd/es/layout/layout";
+import ShoppingCartBtn from "../ShoppingCartBtn";
 
 const { Header, Content, Sider } = Layout;
 
@@ -40,7 +41,23 @@ export const MyLayout: React.FC = () => {
           Aboba
         </Header>
 
-        <Content style={{ padding: "16px", backgroundColor: "#002766" }}>
+        <Content
+          style={{
+            position: "relative",
+            padding: "16px",
+            backgroundColor: "#002766",
+          }}
+        >
+          <div
+            style={{
+              position: "fixed",
+              bottom: "80px",
+              right: "20px",
+              zIndex: "10",
+            }}
+          >
+            <ShoppingCartBtn />
+          </div>
           <Outlet />
         </Content>
 
