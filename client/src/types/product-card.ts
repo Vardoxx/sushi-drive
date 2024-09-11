@@ -4,7 +4,7 @@ export interface ItemsProps {
   title: string;
   composition: string;
   cost: number;
-  tags?: string[];
+  tag?: string[] | undefined[] | undefined;
 }
 
 export interface ProductCardProps {

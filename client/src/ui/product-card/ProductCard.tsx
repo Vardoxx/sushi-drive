@@ -1,6 +1,7 @@
 import { Button, Card, Col, Image, Row } from "antd";
 import { ProductCardProps } from "../../types/product-card";
 import { useNotification } from "../../hooks/useNotification";
+import { tagColorChanger } from "../../utils/tagColorChanger";
 import Meta from "antd/es/card/Meta";
 
 const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
@@ -10,7 +11,21 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
     <Row justify={"center"} gutter={[24, 24]}>
       {contextHolder}
       {items.map((i) => (
-        <Col key={i.id}>
+        <Col key={i.id} style={{ position: "relative" }}>
+          <div className="tag-container">
+            {i.tag?.map((tag) => (
+              <div
+                key={tag}
+                className="tag-body"
+                style={{
+                  backgroundColor:
+                    tag !== undefined ? tagColorChanger(i.tag)[tag] : "",
+                }}
+              >
+                {tag}
+              </div>
+            ))}
+          </div>
           <Card
             key={i.id}
             hoverable

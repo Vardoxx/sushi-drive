@@ -1,25 +1,27 @@
 export const ProductItems = [
   {
     id: 1,
+    img: "https://w7.pngwing.com/pngs/678/694/png-transparent-frying-of-seafoods-wok-dish-tableware-recipe-frying-pan-cooking-wok-cook-map-cooking-wok-thumbnail.png",
+    title: "Рамен с говядиной",
+    composition: "Соус терияки, говядина, лапша пшеничная, болгарский перец",
+    tag: ["классическое"],
+    cost: 250,
+  },
+  {
+    id: 2,
     img: "https://w7.pngwing.com/pngs/197/951/png-transparent-sushi-chicken-chinese-noodles-wok-sushi-food-recipe-cuisine-thumbnail.png",
     title: "Вок с курицей",
     composition: "Соус терияки, курица, гречневая лапша, морковка по корейски",
     tag: ["острое"],
     cost: 250,
   },
-  {
-    id: 2,
-    img: "https://w7.pngwing.com/pngs/678/694/png-transparent-frying-of-seafoods-wok-dish-tableware-recipe-frying-pan-cooking-wok-cook-map-cooking-wok-thumbnail.png",
-    title: "Рамен с говядиной",
-    composition: "Соус терияки, говядина, лапша пшеничная, болгарский перец",
-    cost: 250,
-  },
+
   {
     id: 4,
     img: "https://example.com/image1.jpg",
     title: "Вегетарианский суп",
     composition: "Лапша, овощи, томатный сок",
-    tag: ["вегетарианское", "супы"],
+    tag: ["постное", "острое"],
     cost: 250,
   },
   {
@@ -27,7 +29,7 @@ export const ProductItems = [
     img: "https://example.com/image2.jpg",
     title: "Бургер с курицей",
     composition: "Хлеб, курица, сыр, салат",
-    tag: ["грибы", "мясо"],
+    tag: ["сладкое", "постное"],
     cost: 250,
   },
   {
@@ -35,7 +37,7 @@ export const ProductItems = [
     img: "https://example.com/image3.jpg",
     title: "Паста с раками",
     composition: "Спагетти, раки, лимон, масло",
-    tag: ["рыба", "морепродукты"],
+    tag: ["постное"],
     cost: 250,
   },
   {
@@ -43,7 +45,7 @@ export const ProductItems = [
     img: "https://example.com/image4.jpg",
     title: "Салат с цыпленком",
     composition: "Цыпленок, овощи, соус ремoulade",
-    tag: ["птица", "салаты"],
+    tag: ["классическое"],
     cost: 250,
   },
   {
@@ -51,7 +53,7 @@ export const ProductItems = [
     img: "https://example.com/image2.jpg",
     title: "Бургер с курицей",
     composition: "Хлеб, курица, сыр, салат",
-    tag: ["грибы", "мясо"],
+    tag: ["классическое"],
     cost: 250,
   },
   {
@@ -60,7 +62,7 @@ export const ProductItems = [
     title: "Паста с раками",
     composition:
       "Спагетти, раки, лимон, масло,Спагетти, раки, лимон, масло,Спагетти, раки, лимон, масло,Спагетти, раки, лимон, масло",
-    tag: ["рыба", "морепродукты"],
+    tag: ["постное"],
     cost: 250,
   },
   {
@@ -68,7 +70,7 @@ export const ProductItems = [
     img: "https://example.com/image4.jpg",
     title: "Салат с цыпленком",
     composition: "Цыпленок, овощи, соус ремoulade",
-    tag: ["птица", "салаты"],
+    tag: ["острое"],
     cost: 250,
   },
 ];
