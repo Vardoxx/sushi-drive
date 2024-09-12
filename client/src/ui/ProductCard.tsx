@@ -1,11 +1,19 @@
 import { Button, Card, Col, Image, Row } from "antd";
-import { ProductCardProps } from "../../types/product-card";
-import { useNotification } from "../../hooks/useNotification";
-import { tagColorChanger } from "../../utils/tagColorChanger";
+import { ItemsProps, ProductCardProps } from "../types/product-card";
+import { useNotification } from "../hooks/useNotification";
+import { tagColorChanger } from "../utils/tagColorChanger";
 import Meta from "antd/es/card/Meta";
+import { useDispatch } from "react-redux";
+import { addItemToCart } from "../store/slices/shoppingCart.slice";
 
 const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
   const { openNotification, contextHolder } = useNotification();
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (i: ItemsProps) => {
+    dispatch(addItemToCart(i));
+    openNotification("success", i.title);
+  };
 
   return (
     <Row justify={"center"} gutter={[24, 24]}>
@@ -67,7 +75,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ items }) => {
               }}
             >
               <Button
-                onClick={() => openNotification("success", i.title)}
+                onClick={() => handleAddToCart(i)}
                 type="primary"
                 shape="round"
                 size={"middle"}

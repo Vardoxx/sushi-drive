@@ -5,7 +5,8 @@ export const ProductItems = [
     title: "Рамен с говядиной",
     composition: "Соус терияки, говядина, лапша пшеничная, болгарский перец",
     tag: ["классическое"],
-    cost: 250,
+    quantity: 0,
+    cost: 2520,
   },
   {
     id: 2,
@@ -13,6 +14,7 @@ export const ProductItems = [
     title: "Вок с курицей",
     composition: "Соус терияки, курица, гречневая лапша, морковка по корейски",
     tag: ["острое"],
+    quantity: 0,
     cost: 250,
   },
 
@@ -22,7 +24,8 @@ export const ProductItems = [
     title: "Вегетарианский суп",
     composition: "Лапша, овощи, томатный сок",
     tag: ["постное", "острое"],
-    cost: 250,
+    quantity: 0,
+    cost: 32,
   },
   {
     id: 5,
@@ -30,7 +33,8 @@ export const ProductItems = [
     title: "Бургер с курицей",
     composition: "Хлеб, курица, сыр, салат",
     tag: ["сладкое", "постное"],
-    cost: 250,
+    quantity: 0,
+    cost: 52,
   },
   {
     id: 6,
@@ -38,7 +42,8 @@ export const ProductItems = [
     title: "Паста с раками",
     composition: "Спагетти, раки, лимон, масло",
     tag: ["постное"],
-    cost: 250,
+    quantity: 0,
+    cost: 1220,
   },
   {
     id: 7,
@@ -46,6 +51,7 @@ export const ProductItems = [
     title: "Салат с цыпленком",
     composition: "Цыпленок, овощи, соус ремoulade",
     tag: ["классическое"],
+    quantity: 0,
     cost: 250,
   },
   {
@@ -54,7 +60,8 @@ export const ProductItems = [
     title: "Бургер с курицей",
     composition: "Хлеб, курица, сыр, салат",
     tag: ["классическое"],
-    cost: 250,
+    quantity: 0,
+    cost: 520,
   },
   {
     id: 9,
@@ -63,7 +70,8 @@ export const ProductItems = [
     composition:
       "Спагетти, раки, лимон, масло,Спагетти, раки, лимон, масло,Спагетти, раки, лимон, масло,Спагетти, раки, лимон, масло",
     tag: ["постное"],
-    cost: 250,
+    quantity: 0,
+    cost: 230,
   },
   {
     id: 10,
@@ -71,6 +79,7 @@ export const ProductItems = [
     title: "Салат с цыпленком",
     composition: "Цыпленок, овощи, соус ремoulade",
     tag: ["острое"],
-    cost: 250,
+    quantity: 0,
+    cost: 780,
   },
 ];

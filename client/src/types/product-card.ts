@@ -5,6 +5,7 @@ export interface ItemsProps {
   composition: string;
   cost: number;
   tag?: string[] | undefined[] | undefined;
+  quantity: number;
 }
 
 export interface ProductCardProps {
